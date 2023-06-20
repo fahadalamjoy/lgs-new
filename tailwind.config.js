@@ -12,6 +12,9 @@ module.exports = {
       'white':'#FFFFFF',
       'pink':'#FA5C35',
     },
+    backgroundImage: {
+      'contact-bg': "url('/assets/contact-bg.jpg')",
+    },
     fontFamily: {
       font1: ['Rosarivo', 'serif'],
       font2: ['Teko', 'sans-serif'],

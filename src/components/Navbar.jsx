@@ -1,62 +1,92 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from '../assets/logo.png'
+import {AiOutlineMenu} from 'react-icons/ai';
 export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+  let [open, setOpen] = useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-pink-500 mb-3">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <img src={Logo} className="h-8" alt="logo"  />
-            <button
-              className=" cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-              type="button"
-              onClick={() => setNavbarOpen(!navbarOpen)}
-            >
-              <i className="fas fa-bars text-pink"></i>
-            </button>
+      <section className="sticky top-0 lg:bg-bg-1 bg-white  w-full   z-50 font-font2">
+      <div className="container mx-auto md:flex items-center justify-between  py-4 md:px-10 px-7 ">
+          <div className="">
+            <img className="" alt="hero" src={Logo} />
           </div>
-          <div
-            className={
-              "lg:flex flex-grow items-center" +
-              (navbarOpen ? " flex" : " hidden")
-            }
-            id="example-navbar-danger"
-          >
-            <ul className="flex flex-col md:items-center items-start lg:flex-row list-none lg:ml-auto">
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="#pablo"
-                >
-                  <i className="fab fa-facebook-square text-lg leading-lg  opacity-75"></i><span className="ml-2">Home</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="#pablo"
-                >
-                  <i className="fab fa-twitter text-lg leading-lg  opacity-75"></i><span className="ml-2">About Us</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="#pablo"
-                >
-                  <i className="fab fa-pinterest text-lg leading-lg  opacity-75"></i><span className="ml-2">Service</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <div className="p-1 rounded-md text-white flex items-center bg-pink">
-                    <h1 className="text-md">Contact Us</h1>
-                </div>
-              </li>
-            </ul>
-          </div>
+
+        <div
+          onClick={() => setOpen(!open)}
+          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden mt-6"
+        >
+          <AiOutlineMenu/>
         </div>
-      </nav>
+
+        <ul
+          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static lg:bg-bg-1 bg-white  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+            open ? "top-20 " : "top-[-490px]"
+          }`}
+        >
+          <li
+            className="md:ml-8 text-xl md:my-0 my-7"
+            onClick={() => setOpen(false)}
+          >
+            {/* <HashLink to={link.link}> */}
+            
+              HOME
+
+            {/* </HashLink> */}
+          </li>
+          {/* <li
+            className="md:ml-8 text-xl md:my-0 my-7"
+            onMouseEnter={() => setDropdown(true)}
+            onMouseLeave={() => setDropdown(false)}
+          >
+
+            <div className="flex">
+              <p>SERVICES</p>
+              <img className="h-2 mt-3 ml-1" src={drop} alt="drop" />
+            </div>
+
+            {dropdown && <Dropdown setOpen={setOpen} />}
+
+          </li> */}
+          <li
+            className="md:ml-8 text-xl md:my-0 my-7"
+            onClick={() => setOpen(false)}
+          >
+            {/* <HashLink to={link.link}> */}
+            
+              ABOUT US
+
+            {/* </HashLink> */}
+          </li>
+          <li
+            className="md:ml-8 text-xl md:my-0 my-7"
+            onClick={() => setOpen(false)}
+          >
+            {/* <HashLink to={link.link}> */}
+            
+              SERVICES
+
+            {/* </HashLink> */}
+          </li>
+          <li
+            className="md:ml-8 text-xl md:my-0 my-7"
+            onClick={() => setOpen(false)}
+          >
+            {/* <HashLink to={link.link}> */}
+            
+              <div className="bg-pink p-2 inline-block border-2 border-black rounded">
+                CONTACT US
+              </div>
+
+            {/* </HashLink> */}
+          </li>
+
+          {/* <Link to="/contact-us">
+            <Button onClick={() => setOpen(false)}>GET A QUOTE</Button>
+          </Link> */}
+        </ul>
+      </div>
+    </section>
     </>
   );
 }
