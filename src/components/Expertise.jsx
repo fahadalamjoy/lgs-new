@@ -21,7 +21,7 @@ export default function Expertise() {
     const [openTab, setOpenTab] = React.useState(1);
   return (
     <>
-      <section className="bg-bg-2 md:h-[50vh] h-full flex flex-col  items-center lg:pt-20 pt-6">
+      <section className="bg-bg-2  h-full flex flex-col lg:px-12 px-4 items-center lg:pt-20 py-12">
         <div className="container mx-auto lg:p-0 p-4">
           <h1 className="lg:text-7xl text-3xl text-left text-white font-font2 ">
             Technologies We <span className="text-pink"> Expertise.</span>

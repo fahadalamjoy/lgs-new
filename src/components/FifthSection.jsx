@@ -8,7 +8,7 @@ import c5 from '../assets/c5.png'
 export default function FifthSection() {
   return (
     <>
-      <section className="md:h-[90vh] h-full   flex items-center">
+      <section className=" h-full   flex items-center py-12 lg:px-12 px-4">
         <div className="container mx-auto py-6">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
             <div className="self-center lg:p-0 p-4">

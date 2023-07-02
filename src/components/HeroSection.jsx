@@ -30,7 +30,7 @@ export default function HeroSection() {
           <div className="w-44 mx-auto">
             <img src={BottomMiddle} alt="bootom-middle" />
           </div>
-          <div className="absolute bottom-[6.5rem] right-12 overflow-hidden hidden md:inline">
+          <div className="absolute bottom-[1.5rem] right-12 overflow-hidden hidden md:inline">
             <img src={BottomRight} alt="bottom-right" />
           </div>
         </div>

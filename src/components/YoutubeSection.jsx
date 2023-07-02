@@ -5,7 +5,7 @@ export default function YoutubeSection() {
     const [seeVideo, setSeeVideo] = useState(true)
   return (
     <>
-    <section className="lg:h-[80vh] h-[50vh] items-center py-6 mx-auto relative">
+    <section className="lg:h-full h-[50vh] items-center py-6 mx-auto relative">
       <h1 className='lg:text-7xl text-3xl text-center text-black font-font2 pt-6'>EXPERIENCE US <span className='text-pink'> LIVE.</span></h1>
       <div className="flex justify-center pt-12" onClick={() => setSeeVideo(false)}>
         <iframe
