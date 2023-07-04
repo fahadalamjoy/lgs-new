@@ -31,9 +31,11 @@ export default function Contact() {
             </div>
 
         </section>
-        <div className='h-[20vh] lg:w-2/3 w-full mx-auto bg-cover bg-center font-font2 rounded-md drop-shadow-lg ' style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <div className='2xl:h-[30vh] h-[20vh] lg:w-2/3 w-full mx-auto bg-cover bg-center font-font2 rounded-md drop-shadow-lg mb-[-36px]' style={{ backgroundImage: `url(${backgroundImage})` }}>
             <div className='flex  justify-between items-center px-12 pt-12'>
-                <h1 className='text-left lg:text-5xl text-3xl '>LET'S GET YOUR PROJECT <br /> STARTED!</h1>
+                <div>
+                    <h1 className='text-left lg:text-5xl text-3xl '>LET'S GET YOUR PROJECT <br /> STARTED!</h1>
+                </div>
                 <div className='bg-bg-2 lg:p-3 p-2 rounded-md text-white'>
                     <h1 className='lg:text-2xl text-base'>CONTACT <span className='hidden lg:inline-block'> WITH US</span></h1>
                     

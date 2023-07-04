@@ -2,6 +2,7 @@ import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import Expertise from "./components/Expertise";
 import FifthSection from "./components/FifthSection";
+import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import SecondSection from "./components/SecondSection";
@@ -18,6 +19,7 @@ export default function App() {
       <Expertise />
       <FifthSection />
       <Contact />
+      <Footer/>
     </>
   );
 }

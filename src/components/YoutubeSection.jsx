@@ -22,7 +22,7 @@ export default function YoutubeSection() {
       
       </div>
       {seeVideo && (
-            <div className='absolute top-[10rem] right-[20rem] 2xl:block hidden'>
+            <div className='absolute top-[5rem] right-[10rem] 2xl:block hidden'>
             <img src={Youtube} alt="youtube" srcset="" />
           </div>
         )}
