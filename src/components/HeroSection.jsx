@@ -7,7 +7,7 @@ import { TypeAnimation } from "react-type-animation";
 export default function HeroSection() {
   return (
     <>
-      <section className="md:h-[70vh] h-[60vh] flex items-center ">
+      <section id="home" className="md:h-[70vh] h-[60vh] flex items-center ">
         <div className="text-center flex flex-col gap-4">
           <h1 className="md:text-4xl text-xl font-font1">
             Unleash the Digital Potential

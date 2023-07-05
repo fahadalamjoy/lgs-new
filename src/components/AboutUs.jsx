@@ -4,7 +4,7 @@ import Aboutus from '../assets/about-us.png'
 export default function AboutUs() {
   return (
     <>
-        <section className=' h-full flex items-center relative py-12'>
+        <section id='about' className=' h-full flex items-center relative py-12'>
             <div className='container mx-auto grid lg:grid-cols-2 grid-cols-1'>
                 <div className='flex justify-center xl:p-0 lg:p-6 p-4'>
                     <img src={Aboutus} alt="" />

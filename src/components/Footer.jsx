@@ -7,6 +7,7 @@ import Facebook from '../assets/Facebook.png'
 import Insta from '../assets/Insta.png'
 import YouTube from '../assets/Youtube-icon.png'
 import FooterBg from '../assets/footer-background.jpg'
+import { Link } from 'react-scroll'
 
 export default function Footer() {
   return (
@@ -28,10 +29,21 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className='text-xl opacity-70 mt-6'>
-                        <h1>Home</h1>
-                        <h1>About Us</h1>
-                        <h1>Service</h1>
-                        <h1>Contact Us</h1>
+                    <Link  to="home" spy={true} smooth={true}>
+                        <h1 className='cursor-pointer hover:text-pink'>Home</h1>
+
+                    </Link>
+                       <Link  to="about" spy={true} smooth={true}>
+                       <h1 className='cursor-pointer hover:text-pink'>About Us</h1>
+                        </Link> 
+                        <Link  to="services" spy={true} smooth={true}>
+                        <h1 className='cursor-pointer hover:text-pink'>Service</h1>
+
+                        </Link>
+                        <Link  to="contact" spy={true} smooth={true}>
+
+                        <h1 className='cursor-pointer hover:text-pink'>Contact Us</h1>
+                        </Link>
 
                     </div>
                 </div>
@@ -42,28 +54,28 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className='mt-6 text-xl opacity-70 flex flex-col gap-4'>
-                        <div  className='flex'>
+                        <div  className='flex gap-4'>
                             <div>
                                 <img src={Adress} alt="" />
                             </div>
                             <div>
-                                <h1>29 Balmoral Road Birmingham B23 6NY</h1>
+                                <h1 className='hover:text-pink'>29 Balmoral Road Birmingham B23 6NY</h1>
                             </div>
                         </div>
-                        <div  className='flex'>
+                        <div  className='flex gap-4'>
                             <div>
                                 <img src={Contact} alt="" />
                             </div>
                             <div>
-                                <h1>29 Balmoral Road Birmingham B23 6NY</h1>
+                                <h1 className='hover:text-pink'>+44 7879 740842</h1>
                             </div>
                         </div>
-                        <div  className='flex'>
+                        <div  className='flex gap-4'>
                             <div>
                                 <img src={Mailbox} alt="" />
                             </div>
                             <div>
-                                <h1>29 Balmoral Road Birmingham B23 6NY</h1>
+                                <h1 className='hover:text-pink'>info@lightsglobalservices.com</h1>
                             </div>
                         </div>
 
@@ -74,13 +86,13 @@ export default function Footer() {
                         FIND US ON
                     </div>
                     <div className='flex gap-4 mt-6'>
-                        <div>
+                        <div className='hover:animate-bounce'>
                             <img src={Facebook} alt="" />
                         </div>
-                        <div>
+                        <div className='hover:animate-bounce'>
                             <img src={YouTube} alt="" />
                         </div>
-                        <div>
+                        <div className='hover:animate-bounce'>
                             <img src={Insta} alt="" />
                         </div>
                     </div>

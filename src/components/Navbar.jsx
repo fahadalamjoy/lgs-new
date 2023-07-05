@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import Logo from '../assets/logo.png'
 import {AiOutlineMenu} from 'react-icons/ai';
+import {Link} from 'react-scroll'
 export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   let [open, setOpen] = useState(false);
   return (
     <>
-      <section className="sticky top-0 lg:bg-bg-1 bg-white  w-full   z-50 font-font2">
+      <section  className="sticky top-0 lg:bg-bg-1 bg-white  w-full   z-50 font-font2">
       <div className="container mx-auto md:flex items-center justify-between  py-4 md:px-10 px-7 ">
-          <div className="">
+      <Link to="home">
+          <div className="cursor-pointer">
             <img className="" alt="hero" src={Logo} />
           </div>
+          </Link>
 
         <div
           onClick={() => setOpen(!open)}
@@ -25,12 +28,12 @@ export default function Navbar({ fixed }) {
           }`}
         >
           <li
-            className="md:ml-8 text-xl md:my-0 my-7"
-            onClick={() => setOpen(false)}
+            className="md:ml-8 text-xl md:my-0 my-7 cursor-pointer"
+            
           >
             {/* <HashLink to={link.link}> */}
             
-              HOME
+            <Link to="home" spy={true} smooth={true} onClick={() => setOpen(false)}>  HOME </Link>
 
             {/* </HashLink> */}
           </li>
@@ -49,33 +52,34 @@ export default function Navbar({ fixed }) {
 
           </li> */}
           <li
-            className="md:ml-8 text-xl md:my-0 my-7"
-            onClick={() => setOpen(false)}
+            className="md:ml-8 text-xl md:my-0 my-7 cursor-pointer"
+            
           >
             {/* <HashLink to={link.link}> */}
             
-              ABOUT US
+            <Link  to="services" spy={true} smooth={true} onClick={() => setOpen(false)}>SERVICES</Link>  
 
             {/* </HashLink> */}
           </li>
           <li
-            className="md:ml-8 text-xl md:my-0 my-7"
-            onClick={() => setOpen(false)}
+            className="md:ml-8 text-xl md:my-0 my-7 cursor-pointer"
+            
           >
             {/* <HashLink to={link.link}> */}
             
-              SERVICES
+            <Link  to="about" spy={true} smooth={true} onClick={() => setOpen(false)}>ABOUT US</Link>  
 
             {/* </HashLink> */}
           </li>
+          
           <li
             className="md:ml-8 text-xl md:my-0 my-7"
-            onClick={() => setOpen(false)}
+            
           >
             {/* <HashLink to={link.link}> */}
             
-              <div className="bg-pink p-2 inline-block border-2 border-black rounded">
-                CONTACT US
+              <div className="bg-pink p-2 inline-block border-2 border-black rounded cursor-pointer">
+              <Link  to="contact" spy={true} smooth={true} onClick={() => setOpen(false)}>CONTACT US</Link>  
               </div>
 
             {/* </HashLink> */}

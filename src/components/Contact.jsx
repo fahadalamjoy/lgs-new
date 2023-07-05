@@ -7,25 +7,25 @@ import backgroundImage from '../assets/contact-bg.jpg';
 export default function Contact() {
   return (
     <>
-        <section className='h-full font-font2 py-12'>
+        <section id='contact' className='h-full font-font2 py-12'>
             <h1 className='text-7xl text-center font-font2 '>Contact</h1>
-            <div className='bg-pink w-16 h-2 rounded-lg mx-auto'></div>
+            <div className='bg-pink hover:bg-bg-3 w-16 h-2 rounded-lg mx-auto'></div>
             <p className='text-center text-3xl font-font2 pt-2'>We would love to hear from you. Reach out us.</p>
-            <div className='container flex flex-wrap gap-4 justify-evenly mx-auto text-white py-4 mt-6'>
-                <div className='bg-bg-2 flex flex-col gap-1 items-center py-6 px-12 rounded'>
+            <div className='container flex flex-wrap gap-4 justify-evenly mx-auto text-white  py-4 mt-6'>
+                <div className='bg-bg-2 flex flex-col gap-1 items-center py-6 px-12 rounded '>
                     <img src={Con} alt="contact-us" />
-                    <h1>Our Address</h1>
-                    <p>29 Balmoral Road Birmingham B23 6NY</p>
+                    <h1 className='text-xl hover:text-pink'>Our Address</h1>
+                    <p className='text-xl hover:text-pink'>29 Balmoral Road Birmingham B23 6NY</p>
                 </div>
                 <div className='bg-bg-2 flex flex-col gap-3 items-center py-6 px-8 rounded'>
                     <img src={mail} alt="contact-us" />
-                    <h1>Email Us</h1>
-                    <p>info@lightsglobalservices.com</p>
+                    <h1 className='text-xl hover:text-pink'>Email Us</h1>
+                    <p className='text-xl hover:text-pink'>info@lightsglobalservices.com</p>
                 </div>
                 <div className='bg-bg-2 flex flex-col gap-3 items-center py-6 px-8 rounded'>
                     <img src={call} alt="contact-us" />
-                    <h1>Call Us</h1>
-                    <p>+44 7879 740842</p>
+                    <h1 className='text-xl hover:text-pink'>Call Us</h1>
+                    <p className='text-xl hover:text-pink'>+44 7879 740842</p>
                 </div>
                 
             </div>

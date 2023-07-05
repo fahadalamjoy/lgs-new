@@ -16,7 +16,7 @@ export default function FifthSection() {
                 To us, you’re more than just another client.
               </h1>
             </div>
-            <div className="bg-white drop-shadow-lg py-4 px-6 rounded-md flex flex-col gap-3 ">
+            <div className="bg-white hover:bg-bg-3 hover:text-white drop-shadow-lg py-4 px-6 rounded-md flex flex-col gap-3 hover:-translate-y-2 hover:drop-shadow-2xl hover:rounded-xl">
               <div>
                 <img src={c1} alt="c1" />
               </div>
@@ -32,7 +32,7 @@ export default function FifthSection() {
                 impression.
               </p>
             </div>
-            <div className="bg-white drop-shadow-lg py-4 px-6 rounded-md flex flex-col gap-3">
+            <div className="bg-white hover:bg-bg-3 hover:text-white drop-shadow-lg py-4 px-6 rounded-md flex flex-col gap-3 hover:-translate-y-2 hover:drop-shadow-2xl hover:rounded-xl">
               <div>
                 <img src={c2} alt="c1" />
               </div>
@@ -48,7 +48,7 @@ export default function FifthSection() {
                 running smoothly.
               </p>
             </div>
-            <div className="bg-white drop-shadow-lg py-4 px-6 rounded-md flex flex-col gap-3">
+            <div className="bg-white hover:bg-bg-3 hover:text-white drop-shadow-lg py-4 px-6 rounded-md flex flex-col gap-3 hover:-translate-y-2 hover:drop-shadow-2xl hover:rounded-xl">
               <div>
                 <img src={c3} alt="c1" />
               </div>
@@ -63,7 +63,7 @@ export default function FifthSection() {
                 we have the expertise to deliver.
               </p>
             </div>
-            <div className="bg-white drop-shadow-lg py-4 px-6 rounded-md flex flex-col gap-3">
+            <div className="bg-white hover:bg-bg-3 hover:text-white drop-shadow-lg py-4 px-6 rounded-md flex flex-col gap-3 hover:-translate-y-2 hover:drop-shadow-2xl hover:rounded-xl">
               <div>
                 <img src={c4} alt="c1" />
               </div>
@@ -74,7 +74,7 @@ export default function FifthSection() {
               Our team of experts will conduct a comprehensive analysis of your business, examining its current state, identifying pain points, and pinpointing areas for improvement. By gaining a deep understanding of your challenges, we'll develop a customized strategy to address your specific needs.
               </p>
             </div>
-            <div className="bg-white drop-shadow-lg py-4 px-6 rounded-md flex flex-col gap-3">
+            <div className="bg-white hover:bg-bg-3 hover:text-white drop-shadow-lg py-4 px-6 rounded-md flex flex-col gap-3 hover:-translate-y-2 hover:drop-shadow-2xl hover:rounded-xl">
               <div>
                 <img src={c5} alt="c1" />
               </div>
