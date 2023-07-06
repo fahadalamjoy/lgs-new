@@ -17,7 +17,7 @@ export default function Navbar({ fixed }) {
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden mt-6"
+          className="text-3xl absolute right-8 top-2 cursor-pointer md:hidden mt-6"
         >
           <AiOutlineMenu/>
         </div>
