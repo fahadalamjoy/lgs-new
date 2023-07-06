@@ -13,7 +13,7 @@ export default function YoutubeSection() {
           className="lg:w-full  max-w-screen-lg max-h-screen-lg w-80 h-[14rem] lg:h-[32rem] rounded-md"
           width="560"
           height="500"
-          src="https://www.youtube.com/embed/59gW2F9oDFg"
+          src="https://www.youtube.com/embed/0OipbvWWkKY"
           frameBorder="0"
           allow="autoplay; encrypted-media"
           allowFullScreen

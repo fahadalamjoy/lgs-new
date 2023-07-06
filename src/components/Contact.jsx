@@ -31,8 +31,8 @@ export default function Contact() {
             </div>
 
         </section>
-        <div className='2xl:h-[30vh] h-[20vh] lg:w-2/3 w-full mx-auto bg-cover bg-center font-font2 rounded-md drop-shadow-lg mb-[-36px]' style={{ backgroundImage: `url(${backgroundImage})` }}>
-            <div className='flex  justify-between items-center px-12 pt-12'>
+        <div className='h-full lg:w-2/3 w-full mx-auto bg-cover bg-center font-font2 rounded-md drop-shadow-lg mb-[-36px]' style={{ backgroundImage: `url(${backgroundImage})` }}>
+            <div className='flex  justify-between items-center px-12 py-12'>
                 <div>
                     <h1 className='text-left lg:text-5xl text-3xl '>LET'S GET YOUR PROJECT <br /> STARTED!</h1>
                 </div>
